@@ -16,7 +16,7 @@ This is a Simple Login And Registration System made by [@NamanBhat3](https://git
 Some simple Features in this project are:
 
 - On registering a new text file is generated with the register details.
-- When logging in the program checks the files if there is a file with the name provided by the user. If the file with that name is not there then the program will report wrong details. If the file is there then the program will check all the details and specify the details which are wrong.
+- When logging in the program checks the files if there is a file with the name provided by the user. If the file with that name is not there then the program will report that the details are wrong. If the file is there then the program will check all the details and specify the details which are wrong.
 - If the user wants to remove the account confirmation is required with the full name, user name and password if anything is incorrect then the program will not remove the account and give an error.
 
   
