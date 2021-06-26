@@ -9,6 +9,7 @@ class RegisterAndLogin
        string name;
        string User_Name; // This is the user name which is provided by the user to register
        string User_Password; // This is the password which is provided by the user to register
+       string temp_name, temp_User_Name, temp_User_Password; // These are the temp variables which I will use in later functions
     public:
        void registeration() //This function will ask for the details required for registering
        {
@@ -26,6 +27,22 @@ class RegisterAndLogin
            regMaker.close();
            cout<<"Registration Successful!"<<endl;
        }
+
+       inline bool exist(const string& name)
+       {
+          ifstream file(name);
+          if(!file) // If the file was not found, then file is 0, i.e. !file=1 or true.
+          {
+              cout<<"The user does not exist please register"<<endl;
+              registeration();
+              return false;
+          }                   
+          else // If the file was found, then file is non-0.
+          {
+              cout<<"The user exists"<<endl;
+              return true;
+          }                  
+        }
        void Login()
        {
            cout<<"Enter your Name: "<<endl;
@@ -36,6 +53,8 @@ class RegisterAndLogin
            cin>>User_Password;
            string Full_Name, user_n, user_p;
            ifstream LoginCheck(name + ".txt");
+           string full_name_of_file = name + ".txt";
+           exist(full_name_of_file);
            getline(LoginCheck, Full_Name);
            getline(LoginCheck, user_n);
            getline(LoginCheck, user_p);
@@ -67,8 +86,6 @@ class RegisterAndLogin
             cout<<"Enter 1 to Delete your Account"<<endl;
             cout<<"Enter 2 to skip deleting the account"<<endl;
             cin>>confirmation;
-            string temp_name, temp_User_Name, temp_User_Password;
-
             if(confirmation == 1)
             {
                 cout<<"Enter your Name: "<<endl;
@@ -77,6 +94,8 @@ class RegisterAndLogin
                 cin>>User_Name;
                 cout<<"Enter your Password: "<<endl;
                 cin>>User_Password;
+                string full_name_of_the_file = name + ".txt";
+                exist(full_name_of_the_file);
             }
             else if(confirmation == 2)
             {
