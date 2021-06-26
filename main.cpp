@@ -1,8 +1,6 @@
 #include<iostream>
 #include<string>
 #include<fstream>
-#include<cstring>
-// #include<filesystem>
 using namespace std;
 
 class RegisterAndLogin
@@ -14,7 +12,6 @@ class RegisterAndLogin
     public:
        void registeration() //This function will ask for the details required for registering
        {
-           system("cls");
            cout<<"Enter your full name: "<<endl;
            cin>>name;
            cout<<"Enter the New User Name:"<<endl;
@@ -31,7 +28,6 @@ class RegisterAndLogin
        }
        void Login()
        {
-           system("cls");
            cout<<"Enter your Name: "<<endl;
            cin>>name;
            cout<<"Enter your User Name: "<<endl;
@@ -71,6 +67,8 @@ class RegisterAndLogin
             cout<<"Enter 1 to Delete your Account"<<endl;
             cout<<"Enter 2 to skip deleting the account"<<endl;
             cin>>confirmation;
+            string temp_name, temp_User_Name, temp_User_Password;
+
             if(confirmation == 1)
             {
                 cout<<"Enter your Name: "<<endl;
@@ -79,16 +77,16 @@ class RegisterAndLogin
                 cin>>User_Name;
                 cout<<"Enter your Password: "<<endl;
                 cin>>User_Password;
-                
-                if()
-
+            }
+            else if(confirmation == 2)
+            {
+                User_Choice();
             }
        }
 };
 
 void User_Choice(RegisterAndLogin obj)
 {
-    system("cls");
     int Ans;
     cout<<"1. Login"<<endl;
     cout<<"2. Register"<<endl;
@@ -114,15 +112,15 @@ void User_Choice(RegisterAndLogin obj)
                cout<<"Ok exiting the program"<<endl;
            }
     }
-    else if(Ans == 3)
-    {
-        obj.Remove_user();
-    }
-    else 
-    {
-        cout<<"Enter the correct number"<<endl;
-        User_Choice(obj);
-    }
+           else if(Ans == 3)
+           {
+               obj.Remove_user();
+           }
+           else 
+           {
+               cout<<"Enter the correct number"<<endl;
+               User_Choice(obj);
+           }
 }
 
 int main(){
