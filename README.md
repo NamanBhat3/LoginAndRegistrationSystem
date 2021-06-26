@@ -35,7 +35,29 @@ Some simple Features in this project are:
   
   If you don't have the g++ compiler you have to install it on the official website of [MinGw](http://mingw-w64.org/).
    - For Windows go to the downloads section and select the text that says "MingW-W64-builds". Now click the link that says "Installation: Sourceforge" and the download will start. Double click on the executable and it will start the installation. Keep everything as it is.
-   - For Linux
+   - For Linux write the following commands in the terminal to install:
+     First update the package list with the latest version of g++ by running:
+     ```bash
+        $ sudo apt-get update
+     ```
+     Then write the following command:
+     ```bash
+        $ sudo apt-get install g++
+     ```
+   - For MacOS write the following commands to install g++:
+     First Check if brew is installed on your mac computer by running the following command:
+     ```mac
+        $ brew -v
+     ```
+     If it is not installed install it by writing the command:
+     ```mac
+        $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+     ```
+     It will ask for your mac password. After entering the password it will proceed to install homebrew.
+     When homebrew gets installed write the command written below to install g++ or gcc:
+     ```mac
+        $ brew install gcc
+     ```
 ## Building and Running the Application
 
 1. To run the project in a Windows Environment go to the directory with the project files and run the below commands:
