@@ -18,36 +18,49 @@ Some simple Features in this project are:
 
   
 ## Requirements:
+
   g++ compiler:
+
   To Check if you have the g++ compiler write the following code below for your specific os:
 
   - For Windows go to the command prompt and run the following command:
+
   ```cmd
     g++ --version
   ```
   - For Linux/MacOS go to the terminal and run the following command:
+
   ```bash
     $ g++ -v
   ```
   
   If you don't have the g++ compiler follow the steps below to install g++ for your specific os:
+
    - For Windows go to the official website of [MinGw(G++)](http://mingw-w64.org/) and go to the downloads section and select the text that says "MingW-W64-builds". Now click the link that says "Installation: Sourceforge" and the download will start. Double click on the executable and it will start the installation. Keep everything as it is.
+
    - For Linux write the following commands in the terminal to install:
+
      First update the package list with the latest version of g++ by running:
+
      ```bash
        $ sudo apt-get update
      ```
      Then write the following command:
+
      ```bash
        $ sudo apt-get install g++
      ```
    - For MacOS write the following commands in the terminal to install g++:
+
      First Check if brew is installed on your mac computer by running the following command:
+
      ```mac
        $ brew -v
      ```
      If it is not installed install it by going to the [official site of homebrew]("https://brew.sh/") and copying the command written there into the terminal. It will ask for your Mac password. After entering the password it will proceed to install homebrew.
+
      When homebrew gets installed write the command written below to install g++ and gcc:
+
      ```mac
        $ brew install gcc
      ```
@@ -55,19 +68,20 @@ Some simple Features in this project are:
 
 1. To run the project in a Windows Environment open the command prompt in the directory where the project files are located and run the below commands:
 
-```cmd
-    g++ -o main.exe main.cpp
-    ./main.exe
-```
+   ```cmd
+     g++ -o main.exe main.cpp
+     ./main.exe
+   ```
 
 2. To run the project in a MacOS Environment open the terminal, go to the directory where the project files are located and run the following commands:
-```mac
-    $ g++ -o ./main ./main.cpp
-    ./main
-```
+
+   ```mac
+     $ g++ -o ./main ./main.cpp
+     ./main
+   ```
 
 3. To run the project in a linux environment open the terminal, go to the directory where the project files are located and run the following commands:
-```bash
-    $ g++ main.cpp -o main.exe
-    ./main
-```
+   ```bash
+     $ g++ main.cpp -o main.exe
+     ./main
+   ```
