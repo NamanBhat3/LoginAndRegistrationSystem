@@ -21,11 +21,11 @@ Some simple Features in this project are:
   g++ compiler:
   To Check if you have the g++ compiler write the following code below for your specific os:
 
-  - For Windows run the following command:
+  - For Windows go to the command prompt and run the following command:
   ```cmd
     g++ --version
   ```
-  - For Linux/MacOS run the following command:
+  - For Linux/MacOS go to the terminal and run the following command:
   ```bash
     $ g++ -v
   ```
@@ -53,23 +53,21 @@ Some simple Features in this project are:
      ```
 ## Building and Running the Application
 
-1. To run the project in a Windows Environment go to the directory with the project files and run the below commands:
+1. To run the project in a Windows Environment open the command prompt in the directory where the project files are located and run the below commands:
 
 ```cmd
     g++ -o main.exe main.cpp
     ./main.exe
 ```
 
-2. To run the project in a MacOS Environment go to the directory with the project files and run the following commands:
+2. To run the project in a MacOS Environment open the terminal, go to the directory where the project files are located and run the following commands:
 ```mac
     $ g++ -o ./main ./main.cpp
     ./main
 ```
 
-3. To run the project in a linux environment go to the directory with the project files and run the following commands:
+3. To run the project in a linux environment open the terminal, go to the directory where the project files are located and run the following commands:
 ```bash
     $ g++ main.cpp -o main.exe
     ./main
 ```
-
-- Note that the executable for windows that I have attached in the project will not work with MacOS and Linux.
