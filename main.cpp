@@ -42,6 +42,7 @@ class RegisterAndLogin
               cout<<"The user exists."<<endl;
               return true;
           } 
+          file.close();
         }
        void Login(RegisterAndLogin obj)
        {
