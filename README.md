@@ -30,8 +30,8 @@ Some simple Features in this project are:
     $ g++ -v
   ```
   
-  If you don't have the g++ compiler you have to install it on the official website of [MinGw](http://mingw-w64.org/).
-   - For Windows go to the downloads section and select the text that says "MingW-W64-builds". Now click the link that says "Installation: Sourceforge" and the download will start. Double click on the executable and it will start the installation. Keep everything as it is.
+  If you don't have the g++ compiler follow the steps below to install g++ for your specific os:
+   - For Windows go to the official website of [MinGw(G++)](http://mingw-w64.org/) and go to the downloads section and select the text that says "MingW-W64-builds". Now click the link that says "Installation: Sourceforge" and the download will start. Double click on the executable and it will start the installation. Keep everything as it is.
    - For Linux write the following commands in the terminal to install:
      First update the package list with the latest version of g++ by running:
      ```bash
