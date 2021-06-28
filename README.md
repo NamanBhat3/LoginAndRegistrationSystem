@@ -88,4 +88,3 @@ Some simple Features in this project are:
      ./main
    ```
   - Note that the executable I have attached will not work for Linux/MacOS. It will only work for Windows.
-  - Also the bat file will also only work for windows.
