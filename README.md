@@ -87,3 +87,4 @@ Some simple Features in this project are:
      $ g++ main.cpp -o main.exe
      ./main
    ```
+  - Note that the executable I have attached will not work for Linux/MacOS. It will only work for Windows.
